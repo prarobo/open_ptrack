@@ -409,7 +409,9 @@ void OPTCalibrationNode::spin()
 bool OPTCalibrationNode::save()
 {
   // Save tfs between sensors and world coordinate system (last checherboard) to file
-  std::string file_name = ros::package::getPath("opt_calibration") + "/conf/camera_poses.yaml";
+  std::string file_name;
+  std::string default_file_name = ros::package::getPath("opt_calibration") + "/conf/camera_poses.yaml";
+  node_handle_.param("/camera_poses_file", file_name, default_file_name); 
   std::ofstream file;
   file.open(file_name.c_str());
 
