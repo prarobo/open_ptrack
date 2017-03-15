@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!-- SESSION ID: 1489546728 -->
+<launch>
+
+  <!-- Sensor parameters -->
+  <arg name="sensor_id"   default="001532335047" />
+  <arg name="sensor_name" default="k4" />
+
+  <!-- Detection node -->
+  <include file="$(find detection)/launch/detector_kinect2.launch">
+    <arg name="sensor_id"               value="$(arg sensor_id)" />
+    <arg name="rgb_camera_info_url"     value="file://$(find opt_calibration)/camera_info/rgb_$(arg sensor_id).yaml" />
+    <arg name="sensor_name"             value="$(arg sensor_name)" />
+    <arg name="ground_from_calibration" value="true" />
+  </include>
+
+</launch>

@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<!-- CALIBRATION ID: 1489431749 -->
+<launch>
+
+  <!-- Network parameters -->
+
+  <!-- pc: cooplab-gear -->
+  <!-- sensor: k3 -->
+  <node pkg="tf" type="static_transform_publisher" name="k3_broadcaster"
+        args="1.08195 1.93192 0.199756 0.301874 -0.0373251 -0.240851 0.921667 /world /k3 100" />
+  <node pkg="tf" type="static_transform_publisher" name="k3_broadcaster_2"
+        args="0 0 0 1.57 -1.57 0 /k3 /k3_link 100" />
+
+  <!-- sensor: k2 -->
+  <node pkg="tf" type="static_transform_publisher" name="k2_broadcaster"
+        args="0 0 0 0 0 0 1 /world /k2 100" />
+  <node pkg="tf" type="static_transform_publisher" name="k2_broadcaster_2"
+        args="0 0 0 1.57 -1.57 0 /k2 /k2_link 100" />
+
+  <!-- sensor: k1 -->
+  <node pkg="tf" type="static_transform_publisher" name="k1_broadcaster"
+        args="1.55232 -2.42103 0.119942 -0.162207 0.35728 0.84568 -0.361754 /world /k1 100" />
+  <node pkg="tf" type="static_transform_publisher" name="k1_broadcaster_2"
+        args="0 0 0 1.57 -1.57 0 /k1 /k1_link 100" />
+
+  <!-- sensor: k5 -->
+  <node pkg="tf" type="static_transform_publisher" name="k5_broadcaster"
+        args="-3.1804 0.380529 1.45435 0.409339 0.398266 0.58017 0.580714 /world /k5 100" />
+  <node pkg="tf" type="static_transform_publisher" name="k5_broadcaster_2"
+        args="0 0 0 1.57 -1.57 0 /k5 /k5_link 100" />
+
+  <!-- sensor: k4 -->
+  <node pkg="tf" type="static_transform_publisher" name="k4_broadcaster"
+        args="-0.11762 -2.76871 1.34159 0.00103889 0.563294 0.825972 -0.0216563 /world /k4 100" />
+  <node pkg="tf" type="static_transform_publisher" name="k4_broadcaster_2"
+        args="0 0 0 1.57 -1.57 0 /k4 /k4_link 100" />
+
+</launch>

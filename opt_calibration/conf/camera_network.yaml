@@ -1,0 +1,53 @@
+# Camera network parameters
+# Supported sensor types: 
+#  * Kinect 1st version (type: kinect1)
+#  * Kinect 2nd version (type: kinect2)
+#  * SwissRanger 4500 (type: sr4500)
+#  * Custom stereo pair composed of PointGrey (e.g. BlackFly) cameras (type: stereo_pg)
+#
+#network:
+#  - pc: "Cassiopea"
+#    sensors:
+#      - type: kinect1
+#        id: "Kinect_v1_0"
+#      - type: kinect2
+#        id: "Kinect_v2"
+#  - pc: "pc_2"
+#    sensors:
+#      - type: kinect1
+#        id: "Kinect_v1_1"
+#        serial: "A00364820345039A"
+#      - type: sr4500
+#        id: "SwissRanger0"
+#        ip: "192.168.1.31"
+#      - type: stereo_pg
+#        id: "blackfly_stereo"
+#        serial_left: "13310958"
+#        serial_right: "13310959"
+
+network:
+  - pc: "cooplab-gear"
+    sensors:
+      - type: kinect2
+        id: "k1"
+        serial: "308780235147"
+      - type: kinect2
+        id: "k2"
+        serial: "024208544747"
+      - type: kinect2
+        id: "k3"
+        serial: "025872444747"
+      - type: kinect2
+        id: "k4"
+        serial: "001532335047"
+      - type: kinect2
+        id: "k5"
+        serial: "105581140847"
+
+# Checkerboard parameters
+checkerboard:
+  rows: 7
+  cols: 6
+  cell_width: 0.07
+  cell_height: 0.07
+  

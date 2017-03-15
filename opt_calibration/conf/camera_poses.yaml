@@ -1,0 +1,108 @@
+# Auto generated file.
+calibration_id: 1489431749
+
+# Poses w.r.t. the "world" reference frame
+poses:
+  k1:
+    translation:
+      x: 1.55232
+      y: -2.42103
+      z: 0.119942
+    rotation:
+      x: -0.162207
+      y: 0.35728
+      z: 0.84568
+      w: -0.361754
+  k2:
+    translation:
+      x: 0
+      y: 0
+      z: 0
+    rotation:
+      x: 0
+      y: 0
+      z: 0
+      w: 1
+  k3:
+    translation:
+      x: 1.08195
+      y: 1.93192
+      z: 0.199756
+    rotation:
+      x: 0.301874
+      y: -0.0373251
+      z: -0.240851
+      w: 0.921667
+  k4:
+    translation:
+      x: -0.11762
+      y: -2.76871
+      z: 1.34159
+    rotation:
+      x: 0.00103889
+      y: 0.563294
+      z: 0.825972
+      w: -0.0216563
+  k5:
+    translation:
+      x: -3.1804
+      y: 0.380529
+      z: 1.45435
+    rotation:
+      x: 0.409339
+      y: 0.398266
+      z: 0.58017
+      w: 0.580714
+
+# Inverse poses
+inverse_poses:
+  k1:
+    translation:
+      x: -0.695692
+      y: -2.02571
+      z: 1.92301
+    rotation:
+      x: -0.162207
+      y: 0.35728
+      z: 0.84568
+      w: 0.361754
+  k2:
+    translation:
+      x: -0
+      y: -0
+      z: -0
+    rotation:
+      x: 0
+      y: 0
+      z: 0
+      w: 1
+  k3:
+    translation:
+      x: -0.0368566
+      y: -1.92639
+      z: 1.10927
+    rotation:
+      x: -0.301874
+      y: 0.0373251
+      z: 0.240851
+      w: 0.921667
+  k4:
+    translation:
+      x: -0.248354
+      y: -2.25308
+      z: 2.08361
+    rotation:
+      x: 0.00103889
+      y: 0.563294
+      z: 0.825972
+      w: 0.0216563
+  k5:
+    translation:
+      x: -0.368088
+      y: -2.46641
+      z: 2.48117
+    rotation:
+      x: -0.409339
+      y: -0.398266
+      z: -0.58017
+      w: 0.580714
